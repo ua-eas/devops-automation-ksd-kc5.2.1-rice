@@ -44,14 +44,22 @@ public class UaEntityDefaultMapper extends UaBaseMapper<EntityDefault> {
 			return null;
 		}
 
-		final String entityId = edsRecord.getUaId();
-		final String principalName = edsRecord.getUid();
-
-		final EntityDefault.Builder person = EntityDefault.Builder.create(entityId);
-
+		
+		
+		
+		
+		String entityId = edsRecord.getUaId();
 		if (entityId == null) {
-			throw new InvalidLdapEntityException("LDAP Search Results yielded an invalid result with attributes " + context.getAttributes());
+			LOG.debug("No Entity ID available: " + context.getAttributes());
+			entityId = "";
 		}
+		String principalName = edsRecord.getUid();
+		if (principalName==null){
+			LOG.debug("No NetID available: " + context.getAttributes());
+			principalName = "";
+		}
+
+		EntityDefault.Builder person = EntityDefault.Builder.create(entityId);
 
 		person.setAffiliations(new ArrayList<EntityAffiliation.Builder>());
 		person.setExternalIdentifiers(new ArrayList<EntityExternalIdentifier.Builder>());
@@ -93,7 +101,7 @@ public class UaEntityDefaultMapper extends UaBaseMapper<EntityDefault> {
 			person.getPrincipals().add(defaultPrincipal);
 		}
 
-		final Principal.Builder defaultPrincipal = Principal.Builder.create(edsRecord.getUaId());
+		final Principal.Builder defaultPrincipal = Principal.Builder.create(entityId);
 
 		defaultPrincipal.setPrincipalId(entityId);
 		defaultPrincipal.setEntityId(entityId);
