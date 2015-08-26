@@ -48,15 +48,19 @@ public class UaEntityDefaultMapper extends UaBaseMapper<EntityDefault> {
 		
 		
 		
+		
+		
+		
+		
 		String entityId = edsRecord.getUaId();
 		if (entityId == null) {
 			LOG.debug("No Entity ID available: " + context.getAttributes());
-			entityId = "";
+			entityId = " ";
 		}
 		String principalName = edsRecord.getUid();
 		if (principalName==null){
 			LOG.debug("No NetID available: " + context.getAttributes());
-			principalName = "";
+			principalName = " ";
 		}
 
 		EntityDefault.Builder person = EntityDefault.Builder.create(entityId);
