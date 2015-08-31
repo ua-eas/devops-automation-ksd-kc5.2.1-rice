@@ -4,3 +4,5 @@ overlays/
 .idea/
 *.iml
 **/*.prefs
+**/*.classpath
+**/*.project
