@@ -204,24 +204,6 @@
       <build>
         <plugins>
           <plugin>
-		    <groupId>external.atlassian.jgitflow</groupId>
-		    <artifactId>jgitflow-maven-plugin</artifactId>
-		    <version>1.0-m5</version>
-		    <configuration>
-			  <autoVersionSubmodules>true</autoVersionSubmodules>
-			  <pushFeatures>true</pushFeatures>
-			  <pushReleases>true</pushReleases>
-			  <pushHotfixes>true</pushHotfixes>
-			  <flowInitContext>
-				<developBranchName>ua-development</developBranchName>
-				<masterBranchName>ua-master</masterBranchName>
-			  </flowInitContext>
-			  <allowSnapshots>true</allowSnapshots>
-			  <defaultOriginUrl>scm:git:git@github.com:ua-eas/devops-automation-ksd-kc5.2.1-rice.git</defaultOriginUrl>
-			  <enableSshAgent>true</enableSshAgent>
-		    </configuration>
-	      </plugin>
-          <plugin>
             <groupId>org.kuali.maven.plugins</groupId>
             <artifactId>spring-maven-plugin</artifactId>
             <dependencies>
@@ -893,6 +875,24 @@
     </pluginManagement>
 
     <plugins>
+      <plugin>
+        <groupId>external.atlassian.jgitflow</groupId>
+        <artifactId>jgitflow-maven-plugin</artifactId>
+        <version>1.0-m5</version>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <pushFeatures>true</pushFeatures>
+          <pushReleases>true</pushReleases>
+          <pushHotfixes>true</pushHotfixes>
+          <flowInitContext>
+            <developBranchName>ua-development</developBranchName>
+            <masterBranchName>ua-master</masterBranchName>
+          </flowInitContext>
+          <allowSnapshots>true</allowSnapshots>
+          <defaultOriginUrl>scm:git:git@github.com:ua-eas/devops-automation-ksd-kc5.2.1-rice.git</defaultOriginUrl>
+          <enableSshAgent>true</enableSshAgent>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>buildnumber-maven-plugin</artifactId>
