@@ -22,7 +22,7 @@
   <parent>
     <artifactId>rice</artifactId>
     <groupId>org.kuali.rice</groupId>
-    <version>devops-automation-release4-SNAPSHOT</version>
+    <version>devops-automation-release3</version>
   </parent>
   <artifactId>rice-kns</artifactId>
 

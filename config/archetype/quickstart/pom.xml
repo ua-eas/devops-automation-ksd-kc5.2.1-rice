@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.kuali.rice</groupId>
     <artifactId>rice-archetype</artifactId>
-    <version>devops-automation-release4-SNAPSHOT</version>
+    <version>devops-automation-release3</version>
   </parent>
   <artifactId>rice-archetype-quickstart</artifactId>
   <packaging>maven-archetype</packaging>
