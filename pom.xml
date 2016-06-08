@@ -886,8 +886,8 @@
           <pushHotfixes>true</pushHotfixes>
           <noDeploy>true</noDeploy>
           <flowInitContext>
-            <developBranchName>ua-development</developBranchName>
-            <masterBranchName>ua-master</masterBranchName>
+            <developBranchName>rice-2.1-ua-development</developBranchName>
+            <masterBranchName>rice-2.1-ua-master</masterBranchName>
           </flowInitContext>
           <allowSnapshots>true</allowSnapshots>
           <defaultOriginUrl>scm:git:git@github.com:ua-eas/devops-automation-ksd-kc5.2.1-rice.git</defaultOriginUrl>
