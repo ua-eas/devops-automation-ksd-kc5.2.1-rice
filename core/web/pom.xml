@@ -21,7 +21,7 @@
     <parent>
         <artifactId>rice-core</artifactId>
         <groupId>org.kuali.rice</groupId>
-        <version>ua-devops-automation-release5</version>
+        <version>ua-da-release6</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
