@@ -21,7 +21,7 @@
     <parent>
         <artifactId>rice</artifactId>
         <groupId>org.kuali.rice</groupId>
-        <version>devops-automation-release4-SNAPSHOT</version>
+        <version>devops-automation-release5-SNAPSHOT</version>
     </parent>
     <artifactId>rice-location</artifactId>
     <name>Rice Location</name>
