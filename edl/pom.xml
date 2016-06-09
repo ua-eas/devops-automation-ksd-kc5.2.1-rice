@@ -20,11 +20,11 @@
   <parent>
     <artifactId>rice</artifactId>
     <groupId>org.kuali.rice</groupId>
-    <version>ua-da-release6</version>
+    <version>ua-da-release7-SNAPSHOT</version>
   </parent>
   <artifactId>rice-edl</artifactId>
   <packaging>pom</packaging>
-  <version>ua-da-release6</version>
+  <version>ua-da-release7-SNAPSHOT</version>
   <name>Rice EDL</name>
   <modules>
   	<module>framework</module>
