@@ -22,7 +22,7 @@
     <parent>
         <artifactId>rice-krad</artifactId>
         <groupId>org.kuali.rice</groupId>
-        <version>devops-automation-release4-SNAPSHOT</version>
+        <version>devops-automation-release4</version>
     </parent>
     <artifactId>rice-krad-web-framework</artifactId>
 
